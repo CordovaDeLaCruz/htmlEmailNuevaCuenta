@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en"
+    style="color-scheme:light;supported-color-schemes:light;margin:0 auto !important;padding:0 !important;height:100% !important;width:100% !important;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
+    <title>Cancelación de Cuenta</title>
+    <!-- CSS Reset : BEGIN -->
+    <!-- CSS Reset : END -->
+    <!-- Progressive Enhancements : BEGIN -->
+    <!-- Progressive Enhancements : END -->
+    <style>
+        .button-td-primary:hover {
+            background: #555555 !important;
+            border-color: #555555 !important
+        }
+
+        .button-a-primary:hover {
+            background: #555555 !important;
+            border-color: #555555 !important
+        }
+    </style>
+    <style type="text/css">
+        /* What it does: Tells the email client that only light styles are provided but the client can transform them to dark. A duplicate of meta color-scheme meta tag above. */
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        /* What it does: Stops email clients resizing small text. */
+        /* What it does: Centers email on Android 4.4 */
+        /* What it does: forces Samsung Android mail clients to use the entire viewport */
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        /* What it does: Replaces default bold style. */
+        /*th {
+                  font-weight: normal;
+              }*/
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        /*img {
+                  -ms-interpolation-mode: bicubic;
+              }*/
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        a[x-apple-data-detectors],
+        /* iOS */
+        .unstyle-auto-detected-links a,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        /* If the above doesn't work, add a .g-img class to any image in question. */
+        /*img.g-img+div {
+                  display: none !important;
+              }*/
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u~div .email-container {
+                min-width: 320px !important;
+            }
+
+            u~div .contentHeader {
+                width: 89% !important;
+            }
+
+            u~div .contentHeaderImg {
+                width: 36px !important;
+            }
+        }
+
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u~div .email-container {
+                min-width: 375px !important;
+            }
+
+            u~div .contentHeader {
+                width: 88% !important;
+            }
+
+            u~div .contentHeaderImg {
+                width: 36px !important;
+            }
+        }
+
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            u~div .email-container {
+                min-width: 414px !important;
+            }
+
+            u~div .contentHeader {
+                width: 88% !important;
+            }
+
+            u~div .contentHeaderImg {
+                width: 36px !important;
+            }
+        }
+
+        /* What it does: Hover styles for buttons */
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+            u~div .responsiveSize {
+                width: 93.3% !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            .bodyEmail {
+                width: 100% !important;
+            }
+
+            .email-container {
+                width: 100% !important;
+                margin: auto !important;
+            }
+
+            .containerHeader {
+                padding: 24px 0px 20px 0px !important;
+            }
+
+            .contentHeader {
+                width: 88% !important;
+            }
+
+            .contentHeaderImg {
+                width: 36px !important;
+            }
+
+            .contentLogoImg {
+                padding: 0px 0px 4px 11px !important;
+            }
+
+            .logoBp {
+                width: 110px !important;
+                height: 24px !important;
+                display: block !important;
+            }
+
+            .costumTable1-1 {
+                padding: 20px 20px 0px 20px !important;
+            }
+
+            .costumTable1-2 {
+                padding: 16px 20px 0px 20px !important;
+            }
+
+            .customTable1-2-1 {
+                width: 65% !important;
+            }
+
+            .customTable1-2-2 {
+                width: 35% !important;
+            }
+
+            .text24-28 {
+                font-size: 24px !important;
+                line-height: 28px !important;
+            }
+
+            .text16-20 {
+                font-size: 16px !important;
+                line-height: 20px !important;
+            }
+
+            .text14-18 {
+                font-size: 14px !important;
+                line-height: 18px !important;
+            }
+
+            .customTable2-1 {
+                padding: 16px 20px 16px 20px !important;
+            }
+
+            .customTable3-1 {
+                padding: 24px 20px 24px 20px !important;
+            }
+
+            .hrStyle {
+                width: 32px !important;
+                border: 2px solid #FFDD00 !important;
+                border-radius: 2px !important;
+                background-color: #FFDD00 !important;
+            }
+
+            .text18-24 {
+                font-size: 18px !important;
+                line-height: 24px !important;
+                padding-top: 24px !important;
+            }
+
+            .text18-24-1 {
+                font-size: 18px !important;
+                line-height: 24px !important;
+            }
+
+            .text14-18 {
+                font-size: 14px !important;
+                line-height: 18px !important;
+            }
+
+            .text20-24 {
+                font-size: 20px !important;
+                line-height: 24px !important;
+            }
+
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+
+            .stack-column-left {
+                text-align: left !important;
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+
+            /* What it does: Adjust typography on small screens to improve readability */
+            .email-container p {
+                font-size: 17px !important;
+            }
+        }
+    </style>
+</head>
+
+<body width="100%"
+    style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;margin:0 auto !important;padding:0 !important;height:100% !important;width:100% !important;margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #E5E5E5;">
+    <center role="article" aria-roledescription="email" lang="en"
+        style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;width: 100%; background-color: #E5E5E5;">
+        <!--Header-->
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="email-container"
+            style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                <td class="containerHeader"
+                    style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;background-color: #E5E5E5; padding: 40px 0px 20px 0px;">
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%"
+                        style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                            <td class="" valign="top" width=""
+                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;padding-right: 12px;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                    style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                                    <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                        <td
+                                            style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;font-family: Arial; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; text-align: right; color: #929292;">
+                                            Luigi Mario Navarro López
+                                        </td>
+                                    </tr>
+                                    <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                        <td
+                                            style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;font-family: Arial; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; text-align: right; color: #929292;">
+                                            Tu DNI termina en: <b
+                                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-weight: 700;">xxxxxx40</b>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="contentHeaderImg" valign="top" width="6%"
+                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;width: 36px;">
+                                <img src="https://saprdbppapp.blob.core.windows.net/appcontain01/App/candado_apertura_cuenta.png?sp=r&st=2021-05-10T21:57:27Z&se=3000-05-11T05:57:27Z&spr=https&sv=2020-02-10&sr=b&sig=%2Fnh2Wq7B5ynpWc%2FOSZqSs0lw%2BCWiOYPXEnFAC0Jkmtg%3D"
+                                    width="36" height="" alt="img_candado"
+                                    style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--First block-->
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600"
+            style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;margin: auto;"
+            class="email-container">
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                <td
+                    style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;background-color: #FFFFFF; padding: 20px 0px 56px 0px; border-radius: 4px;">
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%"
+                        style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                            <td class="contentLogoImg" width="100%"
+                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;padding: 0px 0px 20px 20px;">
+                                <table cellspacing="0" cellpadding="0" border="0" width="100%"
+                                    style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                                    <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                        <td
+                                            style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                                            <img src="https://saprdbppapp.blob.core.windows.net/appcontain01/App/logo_banco_apertura_cuenta.png?sp=r&st=2021-05-10T22:01:24Z&se=3000-05-11T06:01:24Z&spr=https&sv=2020-02-10&sr=b&sig=Cmj6FEYbFRuhItGF5SVWoeb4Ji0RBfJhE6y2TVJiJZ0%3D"
+                                                alt="img_logoBp" class="logoBp"
+                                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;display: block; width: 197px;" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                        </tr>
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                            <td
+                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;background-color: #ffffff;">
+                                <table cellspacing="0" cellpadding="0" border="0" width="100%"
+                                    style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                                    <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                        <td class="costumTable1-1"
+                                            style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;padding: 34px 60px 0px 60px;">
+                                            <table cellspacing="0" cellpadding="0" border="0" width="100%"
+                                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                                                <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                                    <td class="text24-28"
+                                                        style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;font-family: Arial; font-style: normal; font-weight: normal; font-size: 32px; line-height: 36px; text-align: center; color: #0F265C;">
+                                                        Hola Mario, se canceló la cuenta *nombre de la cuenta*
+                                                        exitosamente.
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--Separator-->
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600"
+            style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;margin: auto;"
+            class="email-container">
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color: #E5E5E5;">
+                <td height="20" width="100%"
+                    style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                </td>
+            </tr>
+        </table>
+        <!--Second block-->
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600"
+            style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;margin: auto;"
+            class="email-container">
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                <td class="customTable2-1"
+                    style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;background-color: #FFFFFF; padding: 40px 60px 40px 60px; border-radius: 4px;">
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%"
+                        style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                            <td class="text20-24"
+                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;padding-top: 20px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 20px; line-height: 24px; color: #0F265C;">
+                                Cancelación de cuenta
+                            </td>
+                        </tr>
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                            <td
+                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;padding-top: 16px;">
+                                <hr align="left" class="hrStyle"
+                                    style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;width: 32px; border: 2px solid #FFDD00; border-radius: 2px; background-color: #FFDD00;">
+                            </td>
+                        </tr>
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                            <td
+                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;padding-top: 28px;">
+                                <table cellspacing="0" cellpadding="0" border="0" width="100%"
+                                    style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                                    <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                        <td style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;padding-bottom: 12px;"
+                                            width="50%" class="stack-column-left">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                                width="100%"
+                                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                                                <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                                    <td class="text6"
+                                                        style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;font-family: Arial; font-style: normal; font-weight: bold; font-size: 14px; line-height: 16px; color: #0F265C;">
+                                                        Fecha
+                                                    </td>
+                                                </tr>
+                                                <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                                    <td class="text7"
+                                                        style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;padding-top: 12px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; color: #6F7D9D;">
+                                                        25 de junio del 2020
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;padding-bottom: 12px;"
+                                            width="50%" class="stack-column-left">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                                width="100%"
+                                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                                                <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                                    <td class="text6"
+                                                        style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;font-family: Arial; font-style: normal; font-weight: bold; font-size: 14px; line-height: 16px; color: #0F265C;">
+                                                        Hora
+                                                    </td>
+                                                </tr>
+                                                <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                                    <td class="text7"
+                                                        style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;padding-top: 12px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; color: #6F7D9D;">
+                                                        09:08 am
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                        <td style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;padding-bottom: 12px;"
+                                            width="50%" class="stack-column-left">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                                width="100%"
+                                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                                                <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                                    <td class="text6"
+                                                        style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;font-family: Arial; font-style: normal; font-weight: bold; font-size: 14px; line-height: 16px; color: #0F265C;">
+                                                        Número de cuenta
+                                                    </td>
+                                                </tr>
+                                                <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                                    <td class="text7"
+                                                        style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;padding-top: 12px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; color: #6F7D9D;">
+                                                        **** **** 7045
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;padding-bottom: 12px;"
+                                            width="50%" class="stack-column-left">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                                width="100%"
+                                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                                                <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                                    <td class="text6"
+                                                        style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;font-family: Arial; font-style: normal; font-weight: bold; font-size: 14px; line-height: 16px; color: #0F265C;">
+                                                        Operación
+                                                    </td>
+                                                </tr>
+                                                <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                                    <td class="text7"
+                                                        style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;padding-top: 12px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; color: #6F7D9D;">
+                                                        Cancelación de Cuenta
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                            <td lass="text7"
+                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;font-family: Arial; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; color: #6F7D9D;">
+                                ¿No reconoces esta operación? Comunícate con nosotros a nuestra Banca Telefónica.
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--Separator-->
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600"
+            style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;margin: auto;"
+            class="email-container">
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color: #E5E5E5;">
+                <td height="20" width="100%"
+                    style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                </td>
+            </tr>
+        </table>
+        <!--Third block-->
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600"
+            style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;margin: auto;"
+            class="email-container">
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                <td class="customTable3-1"
+                    style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;background-color: #FFF3CD; padding: 40px 60px 40px 60px; border-radius: 4px;">
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%"
+                        style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                            <td width="57%" class="stack-column-left"
+                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" order="0" width="100%"
+                                    style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                                    <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                        <td class="text18-24-1"
+                                            style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;font-family: Arial; font-style: normal; font-weight: bold; font-size: 20px; line-height: 24px; color: #0F265C;">
+                                            ¿Tienes preguntas?
+                                        </td>
+                                    </tr>
+                                    <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                        <td class="text14-18-1"
+                                            style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;padding-top: 16px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 16px; line-height: 20px; color: #3F517D;">
+                                            Comunícate con nuestra Banca Telefónica al <b
+                                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">01
+                                                612-2222</b>
+                                            desde <b
+                                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">Lima</b>
+                                            o al <b
+                                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">0-801-00222</b>
+                                            desde
+                                            <b
+                                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">provincias</b>.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td align="center" width="43%" class="stack-column-center"
+                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                                <img src="https://saprdbppapp.blob.core.windows.net/appcontain01/App/ilustracion_consultas_apertura_cuenta.png?sp=r&st=2021-05-10T22:00:57Z&se=3000-05-11T06:00:57Z&spr=https&sv=2020-02-10&sr=b&sig=DwJ%2FpM3ivnnQ0Cf8bB0NOsfV3k%2BP8GXJPjyTqd7nvYY%3D"
+                                    alt=" imgConsultasApeturaCuenta" width="128"
+                                    style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--Fourth block-->
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600"
+            style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;margin: auto;"
+            class="email-container">
+            <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                <td
+                    style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%"
+                        style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
+                        <tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                            <td class=""
+                                style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;padding-top: 20px; padding-bottom: 40px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 10px; line-height: 11px; color: #929292;">
+                                Nota de descargo: La información contenida en este e-mail es confidencial y solo puede
+                                ser utilizada por el individuo o la compañía a las cuales está dirigido. Esta
+                                información no debe ser distribuida, ni copiada total o parcialmente por ningún medio,
+                                sin la autorización del BANCO PICHINCHA S.A. La organización no asume responsabilidad
+                                sobre información, opiniones o criterios contenidos en este e-mail que no esté
+                                relacionada con negocios oficiales de nuestra institución.
+                                <br style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                <br style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                                Disclaimer: The information in this e-mail is confidential and only for the use of the
+                                person or company to which it is addressed. This information cannot be totally or
+                                partially distributed or copied by any media without the authorization from BANCO
+                                PICHINCHA S.A. The institution does not assume responsibility about information or
+                                criteria contained in this e-mail that it is not related to the business.
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>

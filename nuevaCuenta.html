@@ -173,7 +173,7 @@
         /* Media Queries */
         @media screen and (max-width: 600px) {
 
-            u~div .responsiveSize{
+            u~div .responsiveSize {
                 width: 93.3% !important;
                 margin-left: auto !important;
                 margin-right: auto !important;
@@ -333,13 +333,14 @@
                                     <tr>
                                         <td
                                             style="font-family: Arial; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; text-align: right; color: #929292;">
-                                            Luigi Mario Navarro López
+                                            ${(userFullName)!""}
                                         </td>
                                     </tr>
                                     <tr>
                                         <td
                                             style="font-family: Arial; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; text-align: right; color: #929292;">
-                                            Tu DNI termina en: <b style="font-weight: 700;">xxxxxx40</b>
+                                            Tu DNI termina en: <b
+                                                style="font-weight: 700;">xxxxxx${(userIdentification)!""}</b>
                                         </td>
                                     </tr>
                                 </table>
@@ -386,9 +387,8 @@
                                                 <tr>
                                                     <td class="text24-28"
                                                         style="font-family: Arial; font-style: normal; font-weight: normal; font-size: 32px; line-height: 36px; text-align: center; color: #0F265C;">
-                                                        Hola Mario, te damos la bienvenida a tu nueva Cuenta
-                                                        de
-                                                        Ahorros
+                                                        Hola ${(userName)!""}, te damos la bienvenida a tu nueva Cuenta
+                                                        ${(accountAlias)!""}
                                                     </td>
                                                 </tr>
                                             </table>
@@ -493,7 +493,7 @@
                                                 <tr>
                                                     <td class="text7"
                                                         style="padding-top: 12px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; color: #6F7D9D;">
-                                                        Cuenta de Ahorros
+                                                        ${(accountAlias)!""}
                                                     </td>
                                                 </tr>
                                             </table>
@@ -510,7 +510,7 @@
                                                 <tr>
                                                     <td class="text7"
                                                         style="padding-top: 12px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; color: #6F7D9D;">
-                                                        Soles
+                                                        ${(currency)!""}
                                                     </td>
                                                 </tr>
                                             </table>
@@ -529,7 +529,7 @@
                                                 <tr>
                                                     <td class="text7"
                                                         style="padding-top: 12px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; color: #6F7D9D;">
-                                                        Si
+                                                        ${(flagMainAccount)!""}
                                                     </td>
                                                 </tr>
                                             </table>
@@ -546,7 +546,7 @@
                                                 <tr>
                                                     <td class="text7"
                                                         style="padding-top: 12px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; color: #6F7D9D;">
-                                                        Si
+                                                        ${(flagAssociatedToCreditCard)!""}
                                                     </td>
                                                 </tr>
                                             </table>
@@ -565,7 +565,7 @@
                                                 <tr>
                                                     <td class="text7"
                                                         style="padding-top: 12px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; color: #6F7D9D;">
-                                                        000 0 000000 00 00
+                                                        ${(accountNumber)!""}
                                                     </td>
                                                 </tr>
                                             </table>
@@ -582,7 +582,7 @@
                                                 <tr>
                                                     <td class="text7"
                                                         style="padding-top: 12px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; color: #6F7D9D;">
-                                                        000 0 000000 00 00
+                                                        ${(cci)!""}
                                                     </td>
                                                 </tr>
                                             </table>
@@ -601,7 +601,7 @@
                                                 <tr>
                                                     <td class="text7"
                                                         style="padding-top: 12px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; color: #6F7D9D;">
-                                                        25 de junio del 2020 - 09:08 am
+                                                        ${(date)!""}- ${(time)!""}
                                                     </td>
                                                 </tr>
                                             </table>
@@ -630,8 +630,8 @@
                     <table cellspacing="0" cellpadding="0" border="0" width="100%">
                         <tr>
                             <td align="center" width="43%" class="stack-column-center">
-                                <img src="https://saprdbppapp.blob.core.windows.net/appcontain01/App/ilustracion_CCI_apertura_cuenta.png?sp=r&st=2021-05-18T15:23:57Z&se=3000-05-18T23:23:57Z&spr=https&sv=2020-02-10&sr=b&sig=yEVeZVavxvjOkWUxHiXIdjyqKaikuyJ7dKLG4o0HdXg%3D" alt="imgIlustracionAperturaCuenta"
-                                    width="180">
+                                <img src="https://saprdbppapp.blob.core.windows.net/appcontain01/App/ilustracion_CCI_apertura_cuenta.png?sp=r&st=2021-05-18T15:23:57Z&se=3000-05-18T23:23:57Z&spr=https&sv=2020-02-10&sr=b&sig=yEVeZVavxvjOkWUxHiXIdjyqKaikuyJ7dKLG4o0HdXg%3D"
+                                    alt="imgIlustracionAperturaCuenta" width="180">
                             </td>
                             <td width="57%" class="stack-column-left">
                                 <table role="presentation" cellspacing="0" cellpadding="0" order="0" width="100%">
@@ -785,124 +785,400 @@
             </tr>
         </table>
         <!--Sixth block-->
-        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600"
-            style="margin: auto;" class="email-container">
-            <tr>
-                <td>
-                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                            <td style="padding-top: 16px;">
-                                <hr style="background-color: black;">
-                            </td>
-                        </tr>
+        <#if accountAlias)=='CUENTA DE AHORROS SOLES'>
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600"
+                style="margin: auto;" class="email-container">
+                <tr>
+                    <td>
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding-top: 16px;">
+                                    <hr style="background-color: black;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td align="center" width="43%" class="stack-column-center">
+                                                <img src="https://saprdbppapp.blob.core.windows.net/appcontain01/App/Franja_Trea_125-175.png?sp=r&st=2021-08-06T19:38:46Z&se=3000-08-07T03:38:46Z&spr=https&sv=2020-08-04&sr=b&sig=KbxRhzZ1s%2FzMSMvK47WIoYI6gyTmYS%2Fmab3vMeaAEb0%3D"
+                                                    alt=" imgConsultasApeturaCuenta" width="256">
+                                            </td>
+                                            <td width="57%" class="stack-column-left">
+                                                <table role="presentation" cellspacing="0" cellpadding="0" order="0"
+                                                    width="100%">
+                                                    <tr>
+                                                        <td class=""
+                                                            style="font-family: Arial; font-style: normal; font-weight: normal; font-size: 10px; line-height: 11px; color: #423F40; margin: auto;">
+                                                            TEA es igual a la TREA de 1.25%. Ejemplo: para una cuenta de
+                                                            S/ 1,000.00 a 12 meses considerando que no se realiza ningún
+                                                            movimiento adicional a la apertura de la cuenta, el importe
+                                                            total al final del periodo será de S/ 1,012.50. Saldo mínimo
+                                                            de equilibrio para obtener rendimiento en soles S/ 500.00.
+                                                            No incluye ITF.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=""
+                                    style="font-family: Arial; font-style: normal; font-weight: normal; font-size: 10px; line-height: 11px; color: #423F40;">
+                                    *Sin cobro de mantenimiento siempre que el saldo promedio mensual sea igual o mayor
+                                    a S/ 500. Cuenta de ahorros para personas naturales. Depósitos cubiertos por el
+                                    Fondo de Seguro de Depósito: Información sobre condiciones y monto máximo de
+                                    cobertura sujetos a variaciones trimestrales en: www.fds.org.pe.<br>
+                                    Para mayor
+                                    información sobre los términos y condiciones de la cuenta, tasas, comisiones y
+                                    gastos, consulta nuestro Tarifario ubicado en la red de agencias o ingresa a
+                                    www.pichincha.pe o comunícate a la banca telefónica 612-2222 (Lima) o 0801-00222
+                                    (provincia). Esta información se proporciona de acuerdo con el Reglamento de Gestión
+                                    de Conducta de Mercado del Sistema Financiero.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <hr style="background-color: black;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=""
+                                    style="padding-bottom: 40px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 10px; line-height: 11px; color: #929292;">
+                                    Nota de descargo: La información contenida en este e-mail es
+                                    confidencial y solo
+                                    puede ser
+                                    utilizada por
+                                    el individuo o la compañía a las cuales está dirigido. Esta
+                                    información no debe
+                                    ser
+                                    distribuida, ni
+                                    copiada total o parcialmente por ningún medio, sin la autorización
+                                    del BANCO
+                                    PICHINCHA S.A.
+                                    La
+                                    organización no asume responsabilidad sobre información, opiniones o
+                                    criterios
+                                    contenidos en
+                                    este e-mail
+                                    que no esté relacionada con negocios oficiales de nuestra
+                                    institución.<br>
+                                    Disclaimer: The information in this e-mail is confidential and only
+                                    for the use
+                                    of the
+                                    person or company
+                                    to which it is addressed. This information cannot be totally or
+                                    partially
+                                    distributed or
+                                    copied by any
+                                    media without the authorization from BANCO PICHINCHA S.A. The
+                                    institution does
+                                    not assume
+                                    responsibility
+                                    about information or criteria contained in this e-mail that it is
+                                    not related to
+                                    the
+                                    business.
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <#else>
+                <#if accountAlias)=='CUENTA DE AHORROS DOLARES'>
+                    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600"
+                        style="margin: auto;" class="email-container">
                         <tr>
                             <td>
                                 <table cellspacing="0" cellpadding="0" border="0" width="100%">
                                     <tr>
-                                        <td align="center" width="43%" class="stack-column-center">
-                                            <img src="https://saprdbppapp.blob.core.windows.net/appcontain01/App/ic_trea_apertura_cuenta.png?sp=r&st=2021-05-13T06:30:36Z&se=3000-05-13T14:30:36Z&spr=https&sv=2020-02-10&sr=b&sig=bzfyD5We3%2B6cdjAJCD1h5eG1VoCLIzFlWQ80uQyEE8k%3D"
-                                                alt=" imgConsultasApeturaCuenta" width="256">
+                                        <td style="padding-top: 16px;">
+                                            <hr style="background-color: black;">
                                         </td>
-                                        <td width="57%" class="stack-column-left">
-                                            <table role="presentation" cellspacing="0" cellpadding="0" order="0"
-                                                width="100%">
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                    <td align="center" width="43%" class="stack-column-center">
+                                                        <img src="https://saprdbppapp.blob.core.windows.net/appcontain01/App/Franja_Trea_060-100.png?sp=r&st=2021-08-06T19:38:11Z&se=3000-08-07T03:38:11Z&spr=https&sv=2020-08-04&sr=b&sig=%2BJ9M9NJtJ5Zch2UbRkEQv6wiWZSadRVaqdbXTqAuZ1k%3D"
+                                                            alt=" imgConsultasApeturaCuenta" width="256">
+                                                    </td>
+                                                    <td width="57%" class="stack-column-left">
+                                                        <table role="presentation" cellspacing="0" cellpadding="0"
+                                                            order="0" width="100%">
+                                                            <tr>
+                                                                <td class=""
+                                                                    style="font-family: Arial; font-style: normal; font-weight: normal; font-size: 10px; line-height: 11px; color: #423F40; margin: auto;">
+                                                                    TEA es igual a la TREA de 0.60%. Ejemplo: para una
+                                                                    cuenta de US$ 1,000.00 a 12 meses considerando que
+                                                                    no se realiza ningún movimiento adicional a la
+                                                                    apertura de la cuenta, el importe total al ﬁnal del
+                                                                    periodo será de US$1,006.00. Saldo mínimo de
+                                                                    equilibrio para obtener rendimiento en soles US$
+                                                                    150.00. No incluye ITF.
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class=""
+                                            style="font-family: Arial; font-style: normal; font-weight: normal; font-size: 10px; line-height: 11px; color: #423F40;">
+                                            *Sin cobro de mantenimiento siempre que el saldo promedio mensual sea igual
+                                            o mayor a US$ 150. Cuenta de ahorros para personas naturales. Depósitos
+                                            cubiertos por el Fondo de Seguro de Depósito: Información sobre condiciones
+                                            y monto máximo de cobertura sujetos a variaciones trimestrales en:
+                                            www.fds.org.pe.<br>
+                                            Para mayor información sobre los términos y condiciones de la cuenta, tasas,
+                                            comisiones y gastos, consulta nuestro Tarifario ubicado en la red de
+                                            agencias o ingresa a www.pichincha.pe o comunícate a la banca telefónica
+                                            612-2222 (Lima) o 0801-00222 (provincia). Esta información se proporciona de
+                                            acuerdo con el Reglamento de Gestión de Conducta de Mercado del Sistema
+                                            Financiero.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <hr style="background-color: black;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class=""
+                                            style="padding-bottom: 40px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 10px; line-height: 11px; color: #929292;">
+                                            Nota de descargo: La información contenida en este e-mail es
+                                            confidencial y solo
+                                            puede ser
+                                            utilizada por
+                                            el individuo o la compañía a las cuales está dirigido. Esta
+                                            información no debe
+                                            ser
+                                            distribuida, ni
+                                            copiada total o parcialmente por ningún medio, sin la autorización
+                                            del BANCO
+                                            PICHINCHA S.A.
+                                            La
+                                            organización no asume responsabilidad sobre información, opiniones o
+                                            criterios
+                                            contenidos en
+                                            este e-mail
+                                            que no esté relacionada con negocios oficiales de nuestra
+                                            institución.<br>
+                                            Disclaimer: The information in this e-mail is confidential and only
+                                            for the use
+                                            of the
+                                            person or company
+                                            to which it is addressed. This information cannot be totally or
+                                            partially
+                                            distributed or
+                                            copied by any
+                                            media without the authorization from BANCO PICHINCHA S.A. The
+                                            institution does
+                                            not assume
+                                            responsibility
+                                            about information or criteria contained in this e-mail that it is
+                                            not related to
+                                            the
+                                            business.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <#else>
+                        <#if accountAlias)=='AHORRO EFECTIVO SOLES'>
+                            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                width="600" style="margin: auto;" class="email-container">
+                                <tr>
+                                    <td>
+                                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="padding-top: 16px;">
+                                                    <hr style="background-color: black;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td align="center" width="43%" class="stack-column-center">
+                                                                <img src="https://saprdbppapp.blob.core.windows.net/appcontain01/App/Franja_Trea_025-060.png?sp=r&st=2021-08-09T20:10:27Z&se=3000-08-10T04:10:27Z&spr=https&sv=2020-08-04&sr=b&sig=wBWxnosk59NX9QBbA4%2BU%2BT1RMdksiAlukqXcY%2FfkOrg%3D"
+                                                                    alt=" imgConsultasApeturaCuenta" width="256">
+                                                            </td>
+                                                            <td width="57%" class="stack-column-left">
+                                                                <table role="presentation" cellspacing="0"
+                                                                    cellpadding="0" order="0" width="100%">
+                                                                    <tr>
+                                                                        <td class=""
+                                                                            style="font-family: Arial; font-style: normal; font-weight: normal; font-size: 10px; line-height: 11px; color: #423F40; margin: auto;">
+                                                                            TEA es igual a la TREA de 0.25%. Ejemplo: para una cuenta de S/ 1,000.00 a 12 meses considerando que no se realiza ningún movimiento adicional a la apertura de la cuenta, el importe total al ﬁnal del periodo será de S/1002.50. Saldo mínimo de equilibrio para obtener rendimiento en soles S/ 1.00. No incluye ITF.
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""
+                                                    style="font-family: Arial; font-style: normal; font-weight: normal; font-size: 10px; line-height: 11px; color: #423F40;">
+                                                    *Sin cobro de mantenimiento de cuenta. Cuenta de ahorros para personas naturales. Depósitos cubiertos por el Fondo de Seguro de Depósito: Información sobre condiciones y monto máximo de cobertura sujetos a variaciones trimestrales en: www.fds.org.pe.<br>
+                                                    Para más información sobre los términos y condiciones de la cuenta, tasas, comisiones y gastos, consulta nuestro Tarifario ubicado en la red de agencias o ingresa a www.pichincha.pe o comunícate a la banca telefónica 612-2222 (Lima) o 0801-0022 (provincia). Esta información se proporciona de acuerdo con el Reglamento de Gestión de Conducta de Mercado del Sistema Financiero.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <hr style="background-color: black;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""
+                                                    style="padding-bottom: 40px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 10px; line-height: 11px; color: #929292;">
+                                                    Nota de descargo: La información contenida en este e-mail es
+                                                    confidencial y solo
+                                                    puede ser
+                                                    utilizada por
+                                                    el individuo o la compañía a las cuales está dirigido. Esta
+                                                    información no debe
+                                                    ser
+                                                    distribuida, ni
+                                                    copiada total o parcialmente por ningún medio, sin la autorización
+                                                    del BANCO
+                                                    PICHINCHA S.A.
+                                                    La
+                                                    organización no asume responsabilidad sobre información, opiniones o
+                                                    criterios
+                                                    contenidos en
+                                                    este e-mail
+                                                    que no esté relacionada con negocios oficiales de nuestra
+                                                    institución.<br>
+                                                    Disclaimer: The information in this e-mail is confidential and only
+                                                    for the use
+                                                    of the
+                                                    person or company
+                                                    to which it is addressed. This information cannot be totally or
+                                                    partially
+                                                    distributed or
+                                                    copied by any
+                                                    media without the authorization from BANCO PICHINCHA S.A. The
+                                                    institution does
+                                                    not assume
+                                                    responsibility
+                                                    about information or criteria contained in this e-mail that it is
+                                                    not related to
+                                                    the
+                                                    business.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <#else>
+                                <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                    width="600" style="margin: auto;" class="email-container">
+                                    <tr>
+                                        <td>
+                                            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                    <td style="padding-top: 16px;">
+                                                        <hr style="background-color: black;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                            <tr>
+                                                                <td align="center" width="43%"
+                                                                    class="stack-column-center">
+                                                                    <img src="https://saprdbppapp.blob.core.windows.net/appcontain01/App/Franja_Trea_025.png?sp=r&st=2021-08-10T13:51:39Z&se=3000-08-10T21:51:39Z&spr=https&sv=2020-08-04&sr=b&sig=aZ3%2Fns3plB05w3ImLJFTKs%2BKBIIKlU%2FMJ6BmkhgEOPM%3D"
+                                                                        alt=" imgConsultasApeturaCuenta" width="256">
+                                                                </td>
+                                                                <td width="57%" class="stack-column-left">
+                                                                    <table role="presentation" cellspacing="0"
+                                                                        cellpadding="0" order="0" width="100%">
+                                                                        <tr>
+                                                                            <td class=""
+                                                                                style="font-family: Arial; font-style: normal; font-weight: normal; font-size: 10px; line-height: 11px; color: #423F40; margin: auto;">
+                                                                                TEA es igual a la TREA de 0.25%. Ejemplo: para una cuenta de US$1,000.00 a 12 meses considerando que no se realiza ningún movimiento adicional a la apertura de la cuenta, el importe total al final del periodo será de US$1,002.50. Saldo mínimo de equilibrio para obtener rendimiento en soles US$1.00. No incluye ITF.
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
                                                 <tr>
                                                     <td class=""
-                                                        style="font-family: Arial; font-style: normal; font-weight: normal; font-size: 10px; line-height: 11px; color: #423F40; margin: auto;">
-                                                        TEA es igual a la TREA de 3.25%. Ejemplo:
-                                                        para una
-                                                        cuenta de S/
-                                                        1,000.00
-                                                        a 12 meses considerando que no se realiza
-                                                        ningún
-                                                        movimiento
-                                                        adicional a
-                                                        la apertura de la cuenta, el importe total
-                                                        al final del
-                                                        periodo será
-                                                        de
-                                                        S/ 1,032.50. Saldo mínimo de equilibrio para
-                                                        obtener
-                                                        rendimiento en
-                                                        soles S/ 500.00. No incluye ITF.
+                                                        style="font-family: Arial; font-style: normal; font-weight: normal; font-size: 10px; line-height: 11px; color: #423F40;">
+                                                        *Las operaciones gratis aplican para operaciones realizadas en la misma plaza de la apertura de la cuenta. Todos los depósitos, retiros o transferencias realizados en una ciudad distinta a la apertura de la cuenta están sujetas a una comisión. Sin cobro de mantenimiento de cuenta. Cuenta de ahorros para personas naturales. Depósitos cubiertos por el Fondo de Seguro de Depósito: Información sobre condiciones y monto máximo de cobertura sujetos a variaciones trimestrales en: www.fds.org.pe.<br>
+                                                        Para más información sobre los términos y condiciones de la cuenta, tasas, comisiones y gastos, consulta nuestro Tarifario ubicado en la red de agencias o ingresa a www.pichincha.pe o comunícate a la banca telefónica 612-2222 (Lima) o 0801-00222 (provincia). Esta información se proporciona de acuerdo con el Reglamento de Gestión de Conducta de Mercado del Sistema Financiero.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <hr style="background-color: black;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class=""
+                                                        style="padding-bottom: 40px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 10px; line-height: 11px; color: #929292;">
+                                                        Nota de descargo: La información contenida en este e-mail es
+                                                        confidencial y solo
+                                                        puede ser
+                                                        utilizada por
+                                                        el individuo o la compañía a las cuales está dirigido. Esta
+                                                        información no debe
+                                                        ser
+                                                        distribuida, ni
+                                                        copiada total o parcialmente por ningún medio, sin la
+                                                        autorización
+                                                        del BANCO
+                                                        PICHINCHA S.A.
+                                                        La
+                                                        organización no asume responsabilidad sobre información,
+                                                        opiniones o
+                                                        criterios
+                                                        contenidos en
+                                                        este e-mail
+                                                        que no esté relacionada con negocios oficiales de nuestra
+                                                        institución.<br>
+                                                        Disclaimer: The information in this e-mail is confidential and
+                                                        only
+                                                        for the use
+                                                        of the
+                                                        person or company
+                                                        to which it is addressed. This information cannot be totally or
+                                                        partially
+                                                        distributed or
+                                                        copied by any
+                                                        media without the authorization from BANCO PICHINCHA S.A. The
+                                                        institution does
+                                                        not assume
+                                                        responsibility
+                                                        about information or criteria contained in this e-mail that it
+                                                        is
+                                                        not related to
+                                                        the
+                                                        business.
                                                     </td>
                                                 </tr>
                                             </table>
                                         </td>
                                     </tr>
                                 </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class=""
-                                style="font-family: Arial; font-style: normal; font-weight: normal; font-size: 10px; line-height: 11px; color: #423F40;">
-                                *Sin cobro de mantenimiento siempre que el saldo promedio mensual
-                                sea igual o
-                                mayor a S/ 500. Cuenta de ahorros para personas naturales. Depósitos
-                                cubiertos
-                                por el Fondo de Seguro de Depósito: Información sobre condiciones y
-                                monto máximo
-                                de cobertura sujetos a variaciones trimestrales en:
-                                www.fds.org.pe.<br>
-                                Para mayor información sobre los términos y condiciones de la
-                                cuenta, tasas,
-                                comisiones y gastos, consulta nuestro Tarifario ubicado en la red de
-                                agencias o
-                                ingresa a www.pichincha.pe o comunícate a la banca telefónica
-                                612-2222 (Lima) o
-                                0801-00222 (provincia). Esta información se proporciona de acuerdo
-                                con el
-                                Reglamento de Gestión de Conducta de Mercado del Sistema Financiero.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <hr style="background-color: black;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class=""
-                                style="padding-bottom: 40px; font-family: Arial; font-style: normal; font-weight: normal; font-size: 10px; line-height: 11px; color: #929292;">
-                                Nota de descargo: La información contenida en este e-mail es
-                                confidencial y solo
-                                puede ser
-                                utilizada por
-                                el individuo o la compañía a las cuales está dirigido. Esta
-                                información no debe
-                                ser
-                                distribuida, ni
-                                copiada total o parcialmente por ningún medio, sin la autorización
-                                del BANCO
-                                PICHINCHA S.A.
-                                La
-                                organización no asume responsabilidad sobre información, opiniones o
-                                criterios
-                                contenidos en
-                                este e-mail
-                                que no esté relacionada con negocios oficiales de nuestra
-                                institución.<br>
-                                Disclaimer: The information in this e-mail is confidential and only
-                                for the use
-                                of the
-                                person or company
-                                to which it is addressed. This information cannot be totally or
-                                partially
-                                distributed or
-                                copied by any
-                                media without the authorization from BANCO PICHINCHA S.A. The
-                                institution does
-                                not assume
-                                responsibility
-                                about information or criteria contained in this e-mail that it is
-                                not related to
-                                the
-                                business.
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
+                        </#if>
+                </#if>
+        </#if>
     </center>
 
 </body>
